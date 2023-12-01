@@ -34,9 +34,16 @@
 
         public void UpdateStock(int value)
         {
-            this.Stock = value;
+            //IsCreated = true;
+            Stock = value;
         }
 
+        public bool IsCreated { get; }
+
+        public Product()
+        {
+            IsCreated = true;
+        }
 
     }
 }
