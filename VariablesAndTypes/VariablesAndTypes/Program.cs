@@ -44,18 +44,15 @@ try
     int b1 = int.Parse(Console.ReadLine());
     Console.WriteLine("Bir sayı daha girin");
     var b2 = Convert.ToInt32(Console.ReadLine());
-
     checked
     {
         byte b3 = (byte)(b1 / b2);
         Console.WriteLine(b3);
     }
-
 }
 catch (FormatException)
 {
     Console.WriteLine("Lütfen sadece sayısal değer girin");
-
 }
 catch (OverflowException)
 {
@@ -64,7 +61,6 @@ catch (OverflowException)
 catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
-
 }
 
 
