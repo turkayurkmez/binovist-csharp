@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectVSClass", "ObjectVSClass\ObjectVSClass.csproj", "{340F1B46-C425-478F-BB31-F1D6838FDB6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectVSClass", "ObjectVSClass\ObjectVSClass.csproj", "{340F1B46-C425-478F-BB31-F1D6838FDB6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{40F5C1C1-5FE9-48BA-BDC4-B32B6016DFCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{40F5C1C1-5FE9-48BA-BDC4-B32B6016DFCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{C34A7F93-2E32-4AF6-9CA0-135AF0109A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructors\Constructors.csproj", "{C34A7F93-2E32-4AF6-9CA0-135AF0109A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticKeyword", "StaticKeyword\StaticKeyword.csproj", "{53368C8F-9E35-4CED-8F2E-13F5D1811984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticKeyword", "StaticKeyword\StaticKeyword.csproj", "{53368C8F-9E35-4CED-8F2E-13F5D1811984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{F035EFD9-9561-4CFC-B764-D5749A7F43DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{F035EFD9-9561-4CFC-B764-D5749A7F43DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractANDInterface", "AbstractANDInterface\AbstractANDInterface.csproj", "{83602338-3F27-4B0A-B551-D7F35DC40792}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractANDInterface", "AbstractANDInterface\AbstractANDInterface.csproj", "{83602338-3F27-4B0A-B551-D7F35DC40792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LooselyCoupling", "LooselyCoupling\LooselyCoupling.csproj", "{4927F84F-3FA6-4BE5-A3B4-657DB9409D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuiltInInterfaces", "BuiltInInterfaces\BuiltInInterfaces.csproj", "{C48013F9-6D3E-4C18-A847-EE6510B1F4BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{83602338-3F27-4B0A-B551-D7F35DC40792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83602338-3F27-4B0A-B551-D7F35DC40792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83602338-3F27-4B0A-B551-D7F35DC40792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4927F84F-3FA6-4BE5-A3B4-657DB9409D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4927F84F-3FA6-4BE5-A3B4-657DB9409D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4927F84F-3FA6-4BE5-A3B4-657DB9409D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4927F84F-3FA6-4BE5-A3B4-657DB9409D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48013F9-6D3E-4C18-A847-EE6510B1F4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48013F9-6D3E-4C18-A847-EE6510B1F4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48013F9-6D3E-4C18-A847-EE6510B1F4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48013F9-6D3E-4C18-A847-EE6510B1F4BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
