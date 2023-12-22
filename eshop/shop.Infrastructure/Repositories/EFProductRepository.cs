@@ -1,4 +1,5 @@
 ﻿using eshop.Domains.Entities;
+using Microsoft.EntityFrameworkCore;
 using shop.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
@@ -23,9 +24,11 @@ namespace shop.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task CreateAsync(Product entity)
+        public async Task CreateAsync(Product entity)
         {
-            throw new NotImplementedException();
+            await eshopDbContext.Products.AddAsync(entity);
+
+            await eshopDbContext.SaveChangesAsync();
         }
 
         public void Delete(int id)
@@ -53,9 +56,14 @@ namespace shop.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Product> GetByIdAsync(int id)
+        public async Task<Product> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await eshopDbContext.Products.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
+        }
+
+        public async Task<IEnumerable<Product>> SearchByNameAsync(string name)
+        {
+            return await eshopDbContext.Products.Where(p => p.Name.Contains(name)).ToListAsync();
         }
 
         public void Update(Product entity)
@@ -63,9 +71,10 @@ namespace shop.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(Product entity)
+        public async Task UpdateAsync(Product entity)
         {
-            throw new NotImplementedException();
+            eshopDbContext.Products.Update(entity);
+            await eshopDbContext.SaveChangesAsync();
         }
     }
 }

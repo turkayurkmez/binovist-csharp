@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eshop.Domains.Entities
+namespace eshop.Application.DataTransferObjects.Requests
 {
-    public class Product : IEntity
+    public class UpdateProductRequest
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Ürün adı boş olamaz!")]
@@ -16,12 +16,6 @@ namespace eshop.Domains.Entities
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
-
-        public DateTime? CreatedDste { get; set; } = DateTime.Now;
-        public DateTime? UpdatedDste { get; set; } = DateTime.Now;
-
-        public Category? Category { get; set; }
         public int CategoryId { get; set; }
-
     }
 }

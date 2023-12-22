@@ -10,4 +10,8 @@
     <ProjectReference Include="..\shop.Infrastructure\shop.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataTransferObjects\Responses\" />
+  </ItemGroup>
+
 </Project>

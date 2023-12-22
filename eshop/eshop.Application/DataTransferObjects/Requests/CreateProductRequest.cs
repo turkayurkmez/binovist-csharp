@@ -5,23 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eshop.Domains.Entities
+namespace eshop.Application.DataTransferObjects.Requests
 {
-    public class Product : IEntity
+    public class CreateProductRequest
     {
-        public int Id { get; set; }
         [Required(ErrorMessage = "Ürün adı boş olamaz!")]
         [MinLength(2, ErrorMessage = "Ürün adı en az 2 karakterden oluşmalı!")]
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImageUrl { get; set; }
-
-        public DateTime? CreatedDste { get; set; } = DateTime.Now;
-        public DateTime? UpdatedDste { get; set; } = DateTime.Now;
-
-        public Category? Category { get; set; }
         public int CategoryId { get; set; }
-
     }
 }

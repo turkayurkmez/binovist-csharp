@@ -16,6 +16,7 @@ builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 var connectionString = builder.Configuration.GetConnectionString("db");
 builder.Services.AddDbContext<EshopDbContext>(options => options.UseSqlServer(connectionString));
 
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -34,6 +35,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseCors("allow");
 
 app.UseAuthorization();
 

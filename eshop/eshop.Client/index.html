@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="getProducts">Ürünleri Getir</button>
+    <input type="datetime-local" id="calendar" >
+    <ul id="products">
+
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            $('#getProducts').on('click', function () {
+                $.ajax({
+                    url:'https://localhost:7296/api/products',
+                    method:'GET',
+                    success:function(data){
+                        console.log(data);
+                        $.each(data,function(index,item){
+                            $li = $('<li>'+item.name+ '('+item.price+')</li>');
+                            $('#products').append($li);
+
+                        });
+                    },
+                    error:function(err){
+                        console.log(err);
+
+                    }
+                });
+            })
+        )
+
+
+    </script>
+</body>
+
+</html>
