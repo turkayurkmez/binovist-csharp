@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p> Merhaba  @ViewBag.Name</p>
+<p>
+    @if (ViewBag.VisitHour >= 12)
+    {
+        <span>İyi günler</span>
+    }
+    else
+    {
+        <span>Günaydın</span>
+
+    }
+</p>
+
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-3">
+            <partial name="_ProductCard" model="product" />
+        </div>
+    }
+</div>
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{04858607-DE46-427B-9997-84D4F4D52443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventMechanism", "EventMechanism\EventMechanism.csproj", "{F3855C2F-FE5D-4EA9-BBA5-E6706507D3AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04858607-DE46-427B-9997-84D4F4D52443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04858607-DE46-427B-9997-84D4F4D52443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04858607-DE46-427B-9997-84D4F4D52443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04858607-DE46-427B-9997-84D4F4D52443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3855C2F-FE5D-4EA9-BBA5-E6706507D3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3855C2F-FE5D-4EA9-BBA5-E6706507D3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3855C2F-FE5D-4EA9-BBA5-E6706507D3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3855C2F-FE5D-4EA9-BBA5-E6706507D3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6D1AE95-FC9C-4F5F-9073-14472AC32D16}
+	EndGlobalSection
+EndGlobal

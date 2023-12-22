@@ -14,6 +14,8 @@ productService.AddProduct(product3);
 
 productService.SortProducts();
 
+
+//var list = productService.GetProducts();
 foreach (var item in productService)
 {
     Console.WriteLine($"{item.Name} - {item.Price} - {item.Rating} - {item.Stock}");
